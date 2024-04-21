@@ -97,7 +97,7 @@ const RegistrationForm = () => {
           </div>
 
           <button type="submit" className={styles.submitBtn}>
-            Register
+            Sign up
           </button>
         </Form>
       </Formik>

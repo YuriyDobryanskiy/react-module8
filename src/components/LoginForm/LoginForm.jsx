@@ -83,7 +83,7 @@ const LoginForm = () => {
             </div>
           </div>
           <button type="submit" className={styles.submitBtn}>
-            Sign up
+            Sign in
           </button>
         </Form>
       </Formik>
