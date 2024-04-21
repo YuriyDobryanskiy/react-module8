@@ -1,14 +1,10 @@
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import * as Yup from 'yup';
 
 import { login } from '../../redux/auth/operations';
 
 import styles from '../RegistrationForm/RegistrationForm.module.css';
-import {
-  isLoggedInSelector,
-  userNameSelector,
-} from '../../redux/auth/selectors';
 
 const dataValidationSchema = Yup.object().shape({
   email: Yup.string()
@@ -28,9 +24,6 @@ const dataValidationSchema = Yup.object().shape({
 
 const LoginForm = () => {
   const dispatch = useDispatch();
-
-  const isLoggedIn = useSelector(isLoggedInSelector);
-  const userName = useSelector(userNameSelector);
 
   const handleSubmit = data => {
     dispatch(login(data));
@@ -87,12 +80,6 @@ const LoginForm = () => {
           </button>
         </Form>
       </Formik>
-
-      {isLoggedIn && (
-        <div>
-          <h2>Welcome {userName}</h2>
-        </div>
-      )}
     </div>
   );
 };
