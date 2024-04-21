@@ -2,7 +2,7 @@ import { RotatingLines } from 'react-loader-spinner';
 
 const Loader = () => {
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center', padding: '15px' }}>
       <RotatingLines
         visible={true}
         height="100"
