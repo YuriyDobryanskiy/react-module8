@@ -1,0 +1,27 @@
+.userItem {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nameContainer {
+    margin-bottom: 8px;
+}
+
+.nameContainer,
+.phoneContainer {
+    display: flex;
+    gap: 4px;
+}
+
+.deleteButton {
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+}

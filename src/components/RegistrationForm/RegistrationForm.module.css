@@ -1,0 +1,48 @@
+.formError {
+    color: red;
+    font-size: 14px;
+}
+
+.formContainer {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputLabel {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.erroField {
+    margin-left: 2px;
+    margin-bottom: 15px;
+}
+
+.formInput {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    min-width: 300px;
+    padding: 8px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #000000;
+    font-size: 16px;
+}
+
+.submitBtn {
+    display: block;
+    margin-top: 10px;
+    width: 300px;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
