@@ -51,7 +51,6 @@ const Toasts = () => {
         duration: 500,
         id: 'deleteToast',
       });
-      console.log('here');
       return;
     }
   }, [deleteToast]);
