@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { logout } from '../auth/operations';
 import {
   addContact,
   deleteContact,
@@ -79,7 +80,10 @@ const contactsSlice = createSlice({
         state.contacts.items[targetIndex] = action.payload;
         state.contacts.loading = false;
         state.contacts.isHotToastEdit = true;
-      });
+      })
+	  .addCase(logout.fulfilled, () => {
+        return INITIAL_STATE;
+      });;
   },
 });
 
